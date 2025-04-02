@@ -48,6 +48,8 @@ void init(Plugin* p) {
 	p->addModel(modelDualXOR);
 	p->addModel(modelDualXNOR);
 	p->addModel(modelPSelectah);
+#ifdef METAMODULE
 	p->addModel(modelUDPClockSlave);
 	p->addModel(modelUDPClockMaster);
+#endif
 }

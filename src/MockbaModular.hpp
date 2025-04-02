@@ -14,6 +14,7 @@ using namespace simd;
 	#endif
 #endif
 
+#ifndef METAMODULE
 #ifdef ARCH_WIN
 	#include <winsock2.h>                 // Needed for all Winsock stuff
 	#define NOSOCKET INVALID_SOCKET
@@ -27,7 +28,7 @@ using namespace simd;
 	#define NOSOCKET -1
 	#define NOBIND -1
 #endif
-
+#endif
 #ifndef max
 	#define max(a,b)            (((a) > (b)) ? (a) : (b))
 #endif
